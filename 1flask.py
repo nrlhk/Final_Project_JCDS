@@ -368,6 +368,7 @@ def predictCA():
     job = int(request.form['job'])
     housing = int(request.form['housing'])
     creditamount = int(request.form['creditamount'])
+    
     duration = int(request.form['duration'])
     purpose = int(request.form['purpose'])
 
