@@ -374,7 +374,7 @@ def predictCA():
     pred2 = modellogres.predict([[
         age, sex, job, housing, creditamount, duration, purpose
         ]])[0]
-
+        
     if pred2 == 0:
         pred2 = 'He/ She has BAD Credit RISK'
     else:
