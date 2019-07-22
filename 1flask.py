@@ -368,8 +368,8 @@ def predictCA():
     job = int(request.form['job'])
     housing = int(request.form['housing'])
     creditamount = int(request.form['creditamount'])
-    duration = int(request.form['creditamount'])
-    purpose = int(request.form['creditamount'])
+    duration = int(request.form['duration'])
+    purpose = int(request.form['purpose'])
 
     pred2 = modellogres.predict([[
         age, sex, job, housing, creditamount, duration, purpose
