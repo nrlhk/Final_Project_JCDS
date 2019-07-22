@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+<style>
+.a1 {
+  color: black;
+  margin: -5px;
+  font-size: 16px;
+  font-family: 'Arial'
+}
+.a2 {
+  background-color:#0086ad;
+  color: white;
+  padding: 5px;
+  font-family: 'Arial';
+  font-size:16px
+}
+.a3 {
+  color:#0086ad;
+  font-family: 'Arial';
+  font-size:16px
+}
+</style>
+</head>
+<body>
+    <center>
+    <div class='a1'>
+        <h1>
+            <img src="https://www.purchasingadvantage.com/wp-content/uploads/2013/09/SaveTime.jpg" alt="save time" width="40px">
+            Welcome to Sales and Marketing Dashboard
+        </h1>
+    </div>
+
+    <div class='a2'>
+        <form action="http://localhost:5000/predict" method="post">
+        <p>Fill in below format to predict leads result, Get efficient result and contact the right leads!</p>
+        <p>
+        Age:
+        <select name="age">
+            <option value="0">30-34</option>
+            <option value="1">35-39 </option>
+            <option value="2">40-44</option>
+            <option value="3">45-49</option>
+            <option selected hidden></option>
+        </select>
+
+        Gender:
+        <select name="gender">
+            <option value="0">Female</option>
+            <option value="1">Male </option>
+            <option selected hidden></option>
+        </select><br><br>
+
+            Interest 1:
+            <input name="interest1" placeholder="Insert 1st interest number ..." type="number"
+            min="1" max="72" style="width:200px"/>
+            Interest 2:
+            <input name="interest2" placeholder="Insert 2nd interest number ..." type="number"
+            min="1" max="72" style="width:200px"/>
+            Interest 3:
+            <input name="interest3" placeholder="Insert 3rd interest number ..." type="number"
+            min="1" max="72" style="width:200px"/>
+    
+            <input type="submit" value="Predict" color='blue'>
+        </form>
+        </p>
+        </div>
+       
+        <div class='a3'>
+            <p>This is your previous campaign report on Facebook
+            <img src = "{{data.grafik}}" alt="{{data.grafik}}" width = "1400px"></p>
+            <img src = "{{data.grafik11}}" alt="{{data.grafik11}}" width = "1400px"></p>
+            <a href='/'>
+                <pre>Back to log in page</pre>
+            </a>
+        </p>
+        </div>
+        </center> 
+
+
+</body>
+</html>

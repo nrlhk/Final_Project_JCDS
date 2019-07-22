@@ -1,0 +1,12 @@
+[
+    {
+       "id": 1,
+       "dept": "Marketing and Sales",
+       "pwd": 123456
+    },
+    {
+        "id": 2,
+        "dept": "Credit Analyst",
+        "pwd": 987654
+    }
+]

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form CA</title>
+<style>
+.a1 {
+  color: black;
+  margin: -5px;
+  font-size: 16px;
+  font-family: 'Arial'
+}
+.a2 {
+  background-color:#0086ad;
+  color: white;
+  padding: 5px;
+  font-family: 'Arial';
+  font-size:16px;
+}
+.a3 {
+  color:#0086ad;
+  font-family: 'Arial';
+  font-size:16px
+}
+</style>
+</head>
+<body>
+    <center>
+    <div class='a1'>
+        <h1>
+            <img src="https://www.purchasingadvantage.com/wp-content/uploads/2013/09/SaveTime.jpg" alt="save time" width="40px">
+            Welcome to Credit Analyst Dashboard
+        </h1>
+    </div>
+    
+    <div class='a2'>
+        <form action="http://localhost:5000/predictCA" method="post">
+        <p>Please fill in below format to predict the next client credit scoring, Get faster and more efficient result!</p>
+        <p><br>
+        Age:
+        <input name="age" placeholder="Insert your age..." type="number"
+            min="15" max="70" style="width:150px"/>
+        
+        Sex:
+        <select name="sex">
+            <option value="0">Female</option>
+            <option value="1">Male </option>
+            <option selected hidden></option>
+        </select>
+
+        Job:
+        <select name="job">
+            <option value="0">unskilled and non-resident</option>
+            <option value="1">unskilled and resident</option>
+            <option value="2">skilled</option>
+            <option value="3">highly skilled</option>
+            <option selected hidden></option>
+        </select>
+        <br><br>
+
+        Housing:
+        <select name="housing">
+            <option value="0">Own</option>
+            <option value="1">Rent</option>
+            <option value="2">Free</option>
+            <option selected hidden></option>
+        </select>
+
+        Credit Amount:
+        <input name="creditamount" placeholder="Insert amount..." type="number"
+            min="1" style="width:100px"/>
+
+        Duration:
+        <input name="duration" placeholder="Insert duration..." type="number"
+            min="1" max="100" style="width:100px"/>
+
+        Purpose:
+        <select name="purpose">
+            <option value="0">Car</option>
+            <option value="1">Furniture/Equipment</option>
+            <option value="2">Radio/TV</option>
+            <option value="3">domestic appliances</option>
+            <option value="4">repairs</option>
+            <option value="5">education</option>
+            <option value="6">Business</option>
+            <option value="7">Vacation/others</option>
+            <option selected hidden></option>
+        </select><br><br>
+    
+            <input type="submit" value="Predict" color='blue'>
+        </form>
+        </p>
+        </div>
+
+        <div class='a3'>
+            <h2>Previous Client Report: </h2>
+            <p><img src = "{{data.grafik2}}" alt="{{data.grafik2}}" width = "1500px"></p>
+     
+        <p>
+            <a href='/'>
+                <pre>Back to log in page</pre>
+            </a>
+        </p>
+        </div>
+        <br><br>
+        </center> 
+
+
+</body>
+</html>

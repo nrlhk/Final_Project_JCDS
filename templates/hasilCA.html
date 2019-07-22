@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+<style>
+.a1 {
+  color: black;
+  margin: -12px;
+  padding: 1px;
+  font-size: 23px;
+  font-family: 'Arial'
+}
+.a2 {
+  background-color:#0086ad;
+  color: white;
+  margin: -12px;
+  padding: 1px;
+  font-family: 'Arial';
+  font-size:18px
+}
+</style>
+</head>
+<body>
+    <center>
+    <div class='a1'>
+    <h1>
+        <img src="https://www.purchasingadvantage.com/wp-content/uploads/2013/09/SaveTime.jpg" alt="save time" width="50px">
+        Welcome to Credit Analyst Dashboard
+    </h1>
+    </div>
+
+    <div class='a2'>
+        <form action="http://localhost:5000/predictCA">
+        <p>
+            Credit Prediction for this client:
+        </p>
+        <p> {{data.pred}} </p>
+        </div>
+        
+    </div>
+    <br><br><br><br><br>
+    
+    <p>
+        <a href='/'>
+            <pre>Back to log in page</pre>
+        </a>
+    </p>
+    </center> 
+
+</body>
+</html>

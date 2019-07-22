@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+<style>
+.a1 {
+  color: black;
+  margin: -12px;
+  padding: 1px;
+  font-size: 25px;
+  font-family: 'Arial'
+}
+.a2 {
+  background-color:#0086ad;
+  color: white;
+  margin: -12px;
+  padding: 50px;
+  font-family: 'Arial'
+} 
+</style>
+</head>
+<body>
+
+    <center>
+    <div class='a1'>
+    <h1>
+        <img src="https://www.purchasingadvantage.com/wp-content/uploads/2013/09/SaveTime.jpg" alt="save time" width="70px">
+        Welcome to Company Dashboard
+    </h1>
+    </div><br>
+
+    <div class='a2'>
+        <form action="http://localhost:5000/login" method="post">
+        <p>
+        Department:
+        <select name="department">
+            <option value="1">Marketing and Sales</option>
+            <option value="2">Credit Analyst</option>
+            <option selected hidden></option>
+        </select>
+        <br><br>
+
+            Password:
+            <input name="password" placeholder="Insert your 6 digit password number..." type="number"
+            min="1" max="999999" style="width:250px"/>
+        <br><br>
+    
+            <input type="submit" value="Log in">
+        </form>
+        </p>
+        </div>
+        <br><br>
+        </center> 
+
+
+</body>
+</html>
